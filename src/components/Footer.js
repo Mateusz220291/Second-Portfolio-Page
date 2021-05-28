@@ -51,7 +51,7 @@ const ContactWrapper = styled.div`
   height: 200px;
   display: flex;
   flex-direction: column;
-  /* align-items: flex-start; */
+  /* align-it ems: flex-start; */
   justify-content: space-between;
   color: white;
   @media screen and (max-width: 820px) {

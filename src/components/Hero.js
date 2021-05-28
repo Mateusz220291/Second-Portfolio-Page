@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { Button } from "./GlobalStyle";
-import Programmer from "../images/Programmer.svg";
 import { Link as LinkS } from "react-scroll";
+import Programmer from "../images/Programmer.svg";
 
 const HeroContainer = styled.section`
   display: flex;
