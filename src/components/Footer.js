@@ -2,15 +2,10 @@ import React from "react";
 import { Button } from "./GlobalStyle";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import myLogo from "../images/Logo.png";
 
 import { animateScroll as scroll } from "react-scroll";
-import {
-  FaFacebook,
-  FaInstagram,
-  FaLinkedin,
-  FaTwitter,
-  FaMagento,
-} from "react-icons/fa";
+import { FaFacebook, FaLinkedin, FaTwitter, FaMagento } from "react-icons/fa";
 
 const FooterSection = styled.section`
   display: flex;
@@ -86,7 +81,7 @@ const FormLabel = styled.label`
 const FormInput = styled.input`
   width: 100%;
   padding: 10px 20px;
-  border-radius: 2px;
+  border-radius: 20px;
   margin-right: 10px;
   outline: none;
   border: none;
@@ -106,7 +101,7 @@ const FormTextarea = styled.textarea`
   width: 100%;
   height: 200px;
   padding: 10px 20px;
-  border-radius: 2px;
+  border-radius: 20px;
   margin-right: 10px;
   outline: none;
   border: none;
@@ -148,10 +143,11 @@ const Logo = styled(Link)`
   display: flex;
   align-items: center;
   margin-bottom: 16px;
+  img {
+    height: 70px;
+  }
 `;
-const SocialIcon = styled(FaMagento)`
-  margin-right: 10px;
-`;
+
 const Copyright = styled.div`
   color: #fff;
   margin-bottom: 16px;
@@ -207,14 +203,13 @@ function Footer() {
             />
             <FormLabel for="message">WIADOMOŚĆ</FormLabel>
             <FormTextarea name="message" id="message" placeholder="wiadomość" />
-            <FormSubmitButton type="submit">Wyśłij</FormSubmitButton>
+            <FormSubmitButton type="submit">Wyślij</FormSubmitButton>
           </Form>
         </ContactContainer>
         <SocialMedia>
           <SocialMediaWrapper>
             <Logo to="/" onClick={toggleHome}>
-              <SocialIcon />
-              Software Matt
+              <img src={myLogo} alt="logo"></img>
             </Logo>
             <Copyright>Software Matt © 2021</Copyright>
             <SocialWrapper>
@@ -232,9 +227,7 @@ function Footer() {
               >
                 <FaLinkedin />
               </Social>
-              <Social href="/" target="_blank" aria-label="Instagram">
-                <FaInstagram />
-              </Social>
+
               <Social href="/" target="_blank" aria-label="Twitter">
                 <FaTwitter />
               </Social>
