@@ -9,7 +9,6 @@ const AboutMeSection = styled.section`
   padding: 0 10%;
 `;
 const AboutMeWrapper = styled.div`
-  /* padding: 0.2rem calc((100vw - 1300px) / 2); */
   padding-top: 100px;
   display: grid;
   grid-template-columns: 1fr 1fr;

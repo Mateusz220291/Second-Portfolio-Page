@@ -13,18 +13,6 @@ const GlobalStyle = createGlobalStyle`
 }
 `;
 
-// export const Container = styled.div`
-//   z-index: 1;
-//   width: 100%;
-//   max-width: 1300px;
-//   margin: 0 auto;
-//   padding: 0 70px;
-
-//   @media screen and (max-width: 991 px) {
-//     padding: 0 30px;
-//   }
-// `;
-
 export const Button = styled.button`
   border-radius: 4px;
   background: ${({ primary }) => (primary ? "#e62eb5" : "#0467FB")};

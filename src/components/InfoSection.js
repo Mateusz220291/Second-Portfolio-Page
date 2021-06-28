@@ -9,7 +9,6 @@ import myImage from "../images/ja.jpg";
 const Section = styled.section`
   padding: 1rem 0rem;
   background: #f0f0ff;
-  /* background: linear-gradient(to right top, var(--secondColor), var(--light)); */
 `;
 const Container = styled.div`
   padding: 0.2rem calc((100vw - 1300px) / 2);

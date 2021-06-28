@@ -11,7 +11,6 @@ const CardWrapper = styled.div`
   margin: 35px;
   box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
-  /* background: rgba(0, 0, 0, 0.7); */
   background: linear-gradient(
     to right top,
     rgba(255, 255, 255),

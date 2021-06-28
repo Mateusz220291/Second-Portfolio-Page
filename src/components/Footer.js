@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import myLogo from "../images/Logo.png";
 
 import { animateScroll as scroll } from "react-scroll";
-import { FaFacebook, FaLinkedin, FaTwitter, FaMagento } from "react-icons/fa";
+import { FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const FooterSection = styled.section`
   display: flex;
@@ -50,7 +50,6 @@ const ContactWrapper = styled.div`
   height: 200px;
   display: flex;
   flex-direction: column;
-  /* align-it ems: flex-start; */
   justify-content: space-between;
   color: white;
   @media screen and (max-width: 820px) {

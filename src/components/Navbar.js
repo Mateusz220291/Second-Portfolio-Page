@@ -1,5 +1,4 @@
 import styled from "styled-components";
-// import { Container } from "./GlobalStyle";
 import { FaBars } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import { animateScroll as scroll } from "react-scroll";
@@ -90,20 +89,6 @@ const NavMenu = styled.ul`
 
 const NavItem = styled.li`
   height: 80px;
-  /* border-bottom: 2px solid transparent; */
-  /* 
-  &:hover {
-    border-bottom: 4px solid #e62eb5;
-    transition: all 0.2s ease-out;
-  }
-
-  @media screen and (max-width: 960px) {
-    height: 60px;
-    width: 100%;
-    &:hover {
-      border: none;
-    }
-  } */
 `;
 
 const NavLinks = styled(LinkS)`
@@ -122,13 +107,6 @@ const NavLinks = styled(LinkS)`
   &.active {
     border-bottom: 4px solid #e62eb5;
   }
-
-  /* @media screen and (max-width: 960px) {
-    text-align: center;
-    padding: 2rem;
-    width: 100%;
-    display: table;
-  } */
 `;
 
 const Navbar = ({ toggle }) => {
