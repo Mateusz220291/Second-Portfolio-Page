@@ -6,7 +6,7 @@ import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 import ImageOne from "../images/fishing.jpg";
 import ImageTwo from "../images/service.jpg";
-import ImageThree from "../images/truck.jpg";
+import ImageThree from "../images/fish.png";
 
 const SectionProjects = styled.div`
   display: flex;
@@ -31,6 +31,7 @@ const ProjectsContainer = styled.div`
 `;
 const RecruiterInfo = styled.div`
   width: 90%;
+  max-width: 1300px;
   background: linear-gradient(to right top, var(--dark), var(--maincolor));
   border-radius: 25px;
   display: flex;
@@ -96,9 +97,9 @@ function MyProjects() {
         <ProjectsContainer>
           <ProjectCard
             src={ImageOne}
-            title="Koło Wędkarskie"
-            text="Oprócz programowania uwielbiam powędkować od czasu do czasu. Stworzyłem więc strone o tematyce wędkarskiej - przykładową stronę dla koła wędkarskiego."
-            live="https://mateusz220291.github.io/Fishing-association/"
+            title="Wyjazdy na ryby"
+            text="Oprócz programowania lubie kontakt z naturą i wędkowanie. W wolnej chwili stworzyłem stronę o tematyce wędkarskiej - organizacja wyjazdów wędkarskich."
+            live="https://mateusz220291.github.io/FishingTrips/"
             code="https://github.com/Mateusz220291/Fishing-association"
           />
           <ProjectCard
@@ -110,8 +111,8 @@ function MyProjects() {
           />
           <ProjectCard
             src={ImageThree}
-            title="Projekt wkrótce"
-            text="LoreLorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quisquam ipsa libero a ut dicta nobis rem, cumque asperiores corporis adipisci. "
+            title="Złów i wypuść"
+            text="Obecnie skupiam się na stworzeniu aplikacji, która będzie pomagała skatalogować złowione ryby. W kolejnym etapie projekt zostanie rozwinięty do aplikacji mobilnej "
             live="#"
             code="#"
           />

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Skills from "./Skills";
-import myImage from "../images/ja.jpg";
+import myImage from "../images/head.jpg";
 
 const AboutMeSection = styled.section`
   background: #f0f0ff;
@@ -24,15 +24,18 @@ const PhotoContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 768px) {
+    padding: 0 1rem;
+  }
 
   img {
-    width: 70%;
-    height: 60%;
+    width: 80%;
+    height: 80%;
     object-fit: cover;
 
     @media screen and (max-width: 768px) {
-      width: 90%;
-      height: 90%;
+      width: 100%;
+      height: 80%;
     }
   }
 `;
@@ -40,10 +43,12 @@ const TextWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-
   align-items: flex-start;
   line-height: 1.4;
   padding: 5rem 2rem;
+  @media screen and (max-width: 768px) {
+    padding: 1rem 1rem;
+  }
 
   h1 {
     margin-bottom: 1rem;

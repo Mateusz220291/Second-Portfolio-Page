@@ -60,6 +60,7 @@ const HeroContainer = styled.section`
 const HeaderContainer = styled.div`
   z-index: 10;
   width: 90%;
+  max-width: 1300px;
   position: absolute;
   height: 90%;
   display: flex;

@@ -47,8 +47,8 @@ const ColumnRight = styled.div`
   align-items: center;
 
   img {
-    width: 80%;
-    height: 70%;
+    width: 70%;
+    height: 85%;
     object-fit: cover;
 
     @media screen and (max-width: 768px) {

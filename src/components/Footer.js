@@ -36,6 +36,9 @@ const ContactContainer = styled.div`
   display: flex;
   justify-content: center;
   padding: 1rem 0;
+  margin: auto auto;
+  width: 90%;
+  max-width: 1300px;
 
   @media screen and (max-width: 820px) {
     flex-direction: column;

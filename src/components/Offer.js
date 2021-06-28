@@ -13,10 +13,12 @@ const OfferSection = styled.section`
   background: var(--maincolor);
   background: linear-gradient(to right top, var(--dark), var(--maincolor));
   text-align: center;
+  justify-content: center;
   padding: 0 3rem 100px 3rem;
 `;
 const OfferContainer = styled.div`
   display: flex;
+  max-width: 1300px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
