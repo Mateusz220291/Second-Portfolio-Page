@@ -3,11 +3,12 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import styled from "styled-components";
 import { Button } from "./GlobalStyle";
+import { FaGithub } from "react-icons/fa";
 
 const CardWrapper = styled.div`
   position: relative;
   width: 250px;
-  height: 400px;
+  height: 450px;
   margin: 35px;
   box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
@@ -26,11 +27,6 @@ const CardWrapper = styled.div`
   backdrop-filter: blur(5px);
   color: black;
   transition: 0.3s;
-
-  &:hover {
-    transform: scale(1.2) !important;
-    cursor: pointer;
-  }
 `;
 
 const CardImg = styled.img`
@@ -39,6 +35,7 @@ const CardImg = styled.img`
 
 const CardTitle = styled.h2`
   padding: 8px;
+  height: 50px;
 `;
 
 const CardText = styled.p`
@@ -46,6 +43,7 @@ const CardText = styled.p`
   padding: 0 10px;
   font-size: 0.8rem;
   font-weight: 400;
+  height: 130px;
 `;
 
 const ButtonsWrapper = styled.div`
@@ -66,13 +64,18 @@ function ProjectCard({ src, title, text, code, live }) {
   }, []);
   return (
     <>
-      <CardWrapper data-aos="zoom-in">
+      <CardWrapper data-aos="zoom-in" data-aos-once="true">
         <CardImg src={src}></CardImg>
         <CardTitle>{title}</CardTitle>
         <CardText>{text}</CardText>
         <ButtonsWrapper>
           <ButtonLink href={live} target="_blank">
             <Button primary>Live</Button>
+          </ButtonLink>
+          <ButtonLink href={code} target="_blank">
+            <Button primary>
+              <FaGithub />
+            </Button>
           </ButtonLink>
         </ButtonsWrapper>
       </CardWrapper>

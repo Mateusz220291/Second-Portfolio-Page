@@ -4,9 +4,10 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
-import ImageOne from "../images/fishing.jpg";
-import ImageTwo from "../images/service.jpg";
-import ImageThree from "../images/fish.png";
+import ImageOne from "../images/flowers.jpg";
+import ImageTwo from "../images/Wedding.jpg";
+import ImageThree from "../images/array.jpg";
+import ImageFour from "../images/fishing.jpg";
 
 const SectionProjects = styled.div`
   display: flex;
@@ -86,6 +87,7 @@ const Button = styled(LinkR)`
     width: 100%;
   }
 `;
+
 function MyProjects() {
   useEffect(() => {
     Aos.init({ duration: 2000 });
@@ -93,42 +95,53 @@ function MyProjects() {
   return (
     <>
       <SectionProjects id="projects">
-        <ProjectsTitle data-aos="fade-up">Moje projekty</ProjectsTitle>
+        <ProjectsTitle data-aos="fade-up" data-aos-once="true">
+          Moje projekty
+        </ProjectsTitle>
         <ProjectsContainer>
           <ProjectCard
             src={ImageOne}
-            title="Wyjazdy na ryby"
-            text="Oprócz programowania lubie kontakt z naturą i wędkowanie. W wolnej chwili stworzyłem stronę o tematyce wędkarskiej - organizacja wyjazdów wędkarskich."
-            live="https://mateusz220291.github.io/FishingTrips/"
-            code="https://github.com/Mateusz220291/Fishing-association"
+            title="Made of flowers"
+            text="Strona wizytówka zaprojektowana i wykonana na zamówienie klienta zajmującego się dekoracjami kwiatowymi."
+            live="https://mateusz220291.github.io/Made-Of-Flowers/"
+            code="https://github.com/Mateusz220291/Made-Of-Flowers"
           />
           <ProjectCard
             src={ImageTwo}
-            title="Montaż podłóg"
-            text="Strona internetowa wykonana na zlecenie firmiy specjalizującej się w sprzedaży i montażu podłóg. Strona zbudowana za pomocą technologi HTML5, SCSS, JavaScript i JQuery"
-            live="https://mateusz220291.github.io/Floormaker/"
-            code="https://github.com/Mateusz220291/Floormaker"
+            title="Wedding Day"
+            text="Strona internetowa przygotowana na potrzeby imprezy okolicznościowej. Celem było przekazanie jak największej liczby szczegółów, których nie da się zmieścić w standardowych zaproszeniach."
+            live="https://mateusz220291.github.io/Wedding-Website/"
+            code="https://github.com/Mateusz220291/Wedding-Website"
           />
           <ProjectCard
             src={ImageThree}
-            title="Złów i wypuść"
-            text="Obecnie skupiam się na stworzeniu aplikacji, która będzie pomagała skatalogować złowione ryby. W kolejnym etapie projekt zostanie rozwinięty do aplikacji mobilnej "
+            title="Tablica tagów"
+            text="Prosta aplikacja na potrzeby zadania rekrutacyjnego polegająca na pobraniu z API i wyświetlenia konfigurowalnej tablicy. Technologie: Tanstack Query, React, Taiwind.css "
+            live="https://mateusz220291.github.io/Recruitment-Task/"
+            code="https://github.com/Mateusz220291/Recruitment-Task"
+          />
+          <ProjectCard
+            src={ImageFour}
+            title="FishTrckr App"
+            text="Obecnie skupiam się na stworzeniu aplikacji wędkarskiej, która pozwoli katalogować i przeglądać złowione przeze mnie ryby. Technologie: Next.js"
             live="#"
-            code="#"
+            code="https://github.com/Mateusz220291/Fishing-App-Next"
           />
         </ProjectsContainer>
-        <RecruiterInfo data-aos="fade-right">
+        <RecruiterInfo data-aos="fade-right" data-aos-once="true">
           <TextContainer>
             <RecrutierTitle>
-              Poszukujesz zleceniobiorcy do stałej współpracy?
+              Poszukujesz zdolnego Front-end Developera do swojego zespołu?
             </RecrutierTitle>
             <RecruiterText>
-              Jeżeli chcesz zrekrutować mnie do swojej firmy i dowiedzieć się
-              więcej o moich umiejętnościach - kliknij przycisk
+              Jeżeli chcesz porozmawiać o możliwościach współpracy i dowiedzieć
+              się więcej o moich umiejętnościach - zobacz moje CV
             </RecruiterText>
           </TextContainer>
           <ButtonWrapper>
-            <Button to="/aboutme">Dowiedz się więcej!</Button>
+            <Button href="#" download>
+              pobierz CV
+            </Button>
           </ButtonWrapper>
         </RecruiterInfo>
       </SectionProjects>

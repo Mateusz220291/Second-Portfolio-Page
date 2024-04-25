@@ -1,22 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
+
 import { Button } from "./GlobalStyle";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import myLogo from "../images/Logo.png";
 
 import { animateScroll as scroll } from "react-scroll";
-import { FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaLinkedin } from "react-icons/fa";
 
 const FooterSection = styled.section`
+  height: calc(100vh - 80px);
   display: flex;
   flex-direction: column;
   background: var(--maincolor);
   background: linear-gradient(to right top, var(--dark), var(--maincolor));
   text-align: center;
-  padding: 0 120px;
+  padding: 7rem 0;
 
   @media screen and (max-width: 820px) {
     padding: 0 0;
+    height: auto;
   }
 `;
 const InfoWrapper = styled.div``;
@@ -130,7 +133,7 @@ const SocialMediaWrapper = styled.div`
   align-items: center;
   width: 90%;
   max-width: 1000px;
-  margin: 40px auto 0 auto;
+  margin: 40px auto;
 
   @media screen and (max-width: 820px) {
     flex-direction: column;
@@ -168,6 +171,7 @@ function Footer() {
   const toggleHome = () => {
     scroll.scrollToTop();
   };
+  const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
   return (
     <>
       <FooterSection id="contact">
@@ -213,7 +217,7 @@ function Footer() {
             <Logo to="/" onClick={toggleHome}>
               <img src={myLogo} alt="logo"></img>
             </Logo>
-            <Copyright>Software Matt © 2021</Copyright>
+            <Copyright>Software Matt © {currentYear}</Copyright>
             <SocialWrapper>
               <Social
                 href="https://www.facebook.com/mateuszmikla"
@@ -228,10 +232,6 @@ function Footer() {
                 aria-label="Linkedin"
               >
                 <FaLinkedin />
-              </Social>
-
-              <Social href="/" target="_blank" aria-label="Twitter">
-                <FaTwitter />
               </Social>
             </SocialWrapper>
           </SocialMediaWrapper>

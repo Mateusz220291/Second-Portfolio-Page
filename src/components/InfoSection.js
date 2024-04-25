@@ -68,23 +68,27 @@ const InfoSection = () => {
   return (
     <Section id="aboutme">
       <Container>
-        <ColumnRight data-aos="fade-right">
+        <ColumnRight data-aos="fade-right" data-aos-once="true">
           <img src={myImage} alt="img"></img>
         </ColumnRight>
-        <ColumnLeft data-aos="fade-up">
+        <ColumnLeft data-aos="fade-up" data-aos-once="true">
           <h1>Poznajmy się!</h1>
           <p>
-            Cześć! Nazywam się Mateusz i zawodowo zajmuje się programowaniem.
-            Projektuje funkcjonalne strony internetowe posiadające nowoczesny
-            design.
+            Cześć! Nazywam się Mateusz i jestem Front-end developerem z ponad
+            dwuletnim komercyjnym doświadczeniem zawodowym. Do tej pory miałem
+            możliwość pracować w kilku międzynarodowych projektach, gdzie
+            poszerzałem moją wiedzę z zakresu różnych technologii frontendowych.
           </p>
           <p>
+            W wolnym czasie rozwijam swoje umiejętności w zakresie bibliotek
+            React.js i frameworka Next.js. W przyszłości nie wykluczam nauki
+            języka backendowego i rozwoju w kierunku full-stack developera
             Dzięki pasji do programowania ciągle zdobywam nowe umiejętności i
             jestem na bieżąco z obowiązującymi trendami.
           </p>
           <p>
-            Potrzebujesz strony internetowej albo chcesz poprawić wygląd
-            obecnej? - dobrze trafiłeś!
+            Poszkujesz ambitnego Front-end developera do swojego zespołu? -
+            dobrze trafiłeś!
           </p>{" "}
           <LinkTo
             to="projects"

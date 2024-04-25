@@ -30,7 +30,7 @@ function OfferCard({ src, title, text }) {
     Aos.init({ duration: 2000 });
   }, []);
   return (
-    <Card data-aos="flip-left">
+    <Card data-aos="flip-left" data-aos-once="true">
       <CardImg src={src}></CardImg>
       <CardTitle>{title}</CardTitle>
       <CardText>{text}</CardText>
